@@ -1,0 +1,22 @@
+name: Question
+description: Ask a question about a Senzall app
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - "Senzall's Casual Games"
+        - "LT Messages"
+        - "Savior of Senia"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: "Before asking, check the how-to-play guides at senzall.com/casualgames"
+    validations:
+      required: true
